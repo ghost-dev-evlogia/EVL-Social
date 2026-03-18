@@ -6,7 +6,9 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "dev": "next dev",
-    "build": "npx convex deploy --cmd 'next build'",
+    "codegen": "npx convex codegen",
+    "prebuild": "npx convex codegen",
+    "build": "next build",
     "build:dev": "npx convex dev --until-success && next build",
     "start": "next start",
     "lint": "eslint"
